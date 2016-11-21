@@ -86,7 +86,7 @@ def main():
 
     # Parse command line args
     # ==================================================
-    parser = argparse.ArgumentParser(description='Normalize text in the given columns')
+    parser = argparse.ArgumentParser(description='Train CNN model for text classification')
 
     parser.add_argument('-tr', '--train', required=True,
         help='Path to training data')
