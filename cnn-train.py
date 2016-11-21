@@ -101,7 +101,7 @@ def main():
     parser.add_argument('-os', '--summary_dir', required=True,
         help='Path to output summaries dir')
 
-    args = parser.parse_args()
+    args, unknown = parser.parse_known_args()
     # Unescape the delimiter
     args.delimiter = args.delimiter.decode('string_escape')
 
@@ -144,7 +144,7 @@ def main():
     y_train, x_train, label_classes = load_data(args.train, args.delimiter, label_classes=None)
     print("Processing evaluation data")
     y_dev, x_dev, dummy = load_data(args.eval, args.delimiter, label_classes=label_classes)
-    
+
     # Get the vocab size
     with open(args.vocab_size, 'r') as f:
         vocab_size = int(f.readline())
