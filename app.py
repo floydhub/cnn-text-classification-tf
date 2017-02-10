@@ -12,4 +12,4 @@ def evaluate(input):
 
 if __name__ == "__main__":
     setup(checkpoint_dir="./runs/1486683971/checkpoints/")
-    app.run()
+    app.run(host="0.0.0.0")

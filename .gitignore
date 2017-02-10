@@ -67,3 +67,6 @@ target/
 ### IPythonNotebook ###
 # Temporary data
 .ipynb_checkpoints/
+
+.floydexpt
+.floydignore
